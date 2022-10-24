@@ -1,0 +1,93 @@
+.about {
+  width: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutTitle {
+  margin: 10px;
+  padding: 5px;
+  width: 100%;
+  border-top: solid 1px #a7a4a4;
+  border-bottom: solid 1px #a7a4a4;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  line-height: 19px;
+  color: #76b900;
+  font-weight: 600;
+}
+
+.aboutItem > img {
+  margin-top: 15px;
+  width: 250px;
+  height: 250px;
+}
+
+.aboutItem > p {
+  padding: 30px;
+  color: #fff;
+}
+
+.aboutList {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.aboutListItem {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+
+.aboutListItem::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #76b900;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.aboutListItem:hover::after {
+  text-decoration: underline;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.aboutSocial {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.aboutIcon {
+  margin-right: 10px;
+  font-size: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.aboutIcon:hover{
+  color: #76b900;
+}
